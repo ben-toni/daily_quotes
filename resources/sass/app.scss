@@ -1,0 +1,155 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// General
+textarea {
+    resize: none;
+}
+input:focus, textarea:focus, select:focus {
+    outline: none !important;
+    border-color: $green !important;
+    box-shadow: none !important;
+}
+.active-bold a {
+    color: $green !important;
+    font-weight: bold;
+}
+.grey-bg {
+    background: #F6F6F6;
+}
+.dropdown-item.active, .dropdown-item:active {
+    background-color: $green;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.btn-green {
+    background-color: $green;
+    color: $white;
+}
+.btn-green:hover {
+    background-color: $low-green;
+    color: $white;
+}
+.a-green {
+    color: $grey;
+}
+.a-green:hover {
+    color: $green !important;
+    text-decoration: none;
+}
+.a-grey {
+    color: $green;
+}
+.a-grey:hover {
+    color: $grey !important;
+    text-decoration: none;
+}
+.font-16 {
+    font-size: 16px;
+}
+.green-font {
+    color: $green;
+}
+.grey-font {
+    color: $grey;
+}
+.font-20 {
+    font-size: 20px;
+}
+.green-bg {
+    background: $green;
+}
+.white-color {
+    color: $white;
+}
+// Navbar
+.navbar-laravel {
+    border-bottom: 1px solid #e0e0e0;
+}
+.logo i {
+    font-size: 150px;
+    color: $green;
+}
+.logo-nav i {
+    font-size: 50px;
+    color: $green;
+}
+// Custom
+.custom-group-input {
+    border: 1px solid #38c172;
+    border-radius: 6px;
+}
+.custom-pills .nav-item .nav-link {
+    color: $green;
+}
+.custom-pills .nav-item .active {
+    background: $green;
+    color: $white;
+}
+.active-page-link:hover {
+    background-color: $green;
+    color: $white;
+}
+.custom-card {
+    min-height: 200px;
+    height: 200px;
+}
+.card-shadow {
+    -webkit-box-shadow: 13px 18px 25px -9px rgba(0,0,0,0.15);
+    -moz-box-shadow: 13px 18px 25px -9px rgba(0,0,0,0.15);
+    box-shadow: 13px 18px 25px -9px rgba(0,0,0,0.15);
+}
+/* The Modal (background) */
+.custom-modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.custom-modal-content {
+    border-radius: 10px;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+}
+.custom-modal-body {
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+// Media query
+@media only screen and (max-width: 1000px) {
+    .custom-modal-content {
+        width: 100%;
+    }
+}
